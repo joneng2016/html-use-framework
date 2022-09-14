@@ -17,3 +17,14 @@ function requestOfServer() {
     });
 
 }
+
+function submitDataOfUser() {
+    const nameOfUser = $("#name").val()
+    const lasNameOfUser = $("#lastname").val()
+    const ageOfUser = $("#age").val()
+
+    console.log(nameOfUser)
+    console.log(lasNameOfUser)
+    console.log(ageOfUser)
+
+}
