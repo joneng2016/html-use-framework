@@ -21,10 +21,37 @@ function requestOfServer() {
 function submitDataOfUser() {
     const nameOfUser = $("#name").val()
     const lasNameOfUser = $("#lastname").val()
-    const ageOfUser = $("#age").val()
+    const ageOfUser = $("#age").val()      
+    $.ajax({
+        "url": "http://localhost:8000/insert-data",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "data": JSON.stringify({
+            name:nameOfUser,
+            lastName:lasNameOfUser,
+            age:ageOfUser
+        }) 
+    }).done(function (response) {
+        
+        if (response.success) {
+            $("#success-record-msg").css('display','block')
 
-    console.log(nameOfUser)
-    console.log(lasNameOfUser)
-    console.log(ageOfUser)
+            $("#name").val('')
+            $("#lastname").val('')
+            $("#age").val('')            
+        }
 
+    });
+}
+
+
+function closeSuccessMsg() {
+    /* Jquery */
+    $("#success-record-msg").css('display', 'none')
+
+    /* vanila */
+    // document.getElementById('success-record-msg').style.display = 'none'
 }

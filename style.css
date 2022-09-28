@@ -1,3 +1,68 @@
 #show-values {
     display: none;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px; 
+    text-align: center; 
+    margin-top: 30px; 
+    border: 1px solid;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+
+main {
+    height: 600px;
+}
+body > main > article {
+    text-align: center;
+} 
+
+footer {
+    color: #fff;
+    background-color: #000;
+    height: 350px;
+    text-align: center;
+}
+
+footer > span {
+    position: relative;
+    top: 30px;
+    font-weight: 700;
+}
+
+.sucess-record {
+    padding: 5px;
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    color:#5f925f;
+    background-color: #dcecdc;
+}
+
+.sucess-record > div {
+    display: inline-block;
+}
+
+.sucess-record > div > svg {
+    position: relative;
+    top:2px;
+    left:2px;
+    cursor: pointer;
+}
+
+#success-record-msg {
+    display: none;
+}
