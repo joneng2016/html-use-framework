@@ -42,6 +42,9 @@ function submitDataOfUser() {
             $("#name").val('')
             $("#lastname").val('')
             $("#age").val('')            
+        } else {
+            console.log(response)
+            alert('deu erro seu burro!')
         }
 
     });
