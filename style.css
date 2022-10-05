@@ -51,7 +51,6 @@ footer > span {
     color:#5f925f;
     background-color: #dcecdc;
 }
-
 .sucess-record > div {
     display: inline-block;
 }
@@ -65,4 +64,30 @@ footer > span {
 
 #success-record-msg {
     display: none;
+}
+
+.error-record {
+    padding: 5px;
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    color:#bb5f5f;
+    background-color: #efd9ce;
+}
+
+.error-record > div {
+    display: inline-block;
+}
+
+.error-record > div > svg {
+    position: relative;
+    top:2px;
+    left:2px;
+    cursor: pointer;
+}
+
+#error-record-msg {
+    display: none;    
 }
