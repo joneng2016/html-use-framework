@@ -35,9 +35,9 @@ function submitDataOfUser() {
             age:ageOfUser
         }) 
     }).done(function (response) {
-        console.log(response)
         if (response.success) {
             $("#success-record-msg").css('display','block')
+            $("#error-record-msg").css('display','none')
 
             $("#name").val('')
             $("#lastname").val('')
@@ -62,6 +62,7 @@ function submitDataOfUser() {
             }
 
             $("#error-record-msg").css('display','block')
+            $("#success-record-msg").css('display','none')
             $("#content-error-record-msg").html(errorMsg)
             $("#error-record-msg").css('width',errorWidth)
         }
